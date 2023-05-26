@@ -8,7 +8,7 @@ class ApiController extends Controller
 {
     public function __construct() 
     {
-       
+        parent::__construct();
     }
 
     // static method is better for bramus router
