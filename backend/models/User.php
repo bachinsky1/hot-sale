@@ -29,8 +29,7 @@ class User extends Model
     }
 
     public function store(array $data): bool|int
-    {
-
+    { 
         if ($this->validate($data) === false)
             return false;
 
@@ -46,7 +45,7 @@ class User extends Model
 
         $newDb = json_encode($this->db, JSON_INVALID_UTF8_IGNORE | JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES);
 
-        $result = file_put_contents($this->file, $newDb);
+        $result = file_put_contents($this->dbFile, $newDb);
 
         if (!!$result) {
             $this->log->info("New user stored to array.", $data);
