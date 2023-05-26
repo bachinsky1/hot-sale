@@ -1,24 +1,24 @@
 [
     {
-        "Id": "1",
+        "Id": 1,
         "Name": "Name1",
         "Lastname": "Lastname1",
         "Email": "email1@mail.com"
     },
     {
-        "Id": "2",
+        "Id": 2,
         "Name": "Name2",
         "Lastname": "Lastname2",
         "Email": "email2@mail.com"
     },
     {
-        "Id": "3",
+        "Id": 3,
         "Name": "Name3",
         "Lastname": "Lastname3",
         "Email": "email3@mail.com"
     },
     {
-        "Id": "4",
+        "Id": 4,
         "Name": "Name4",
         "Lastname": "Lastname4",
         "Email": "email4@mail.com"
