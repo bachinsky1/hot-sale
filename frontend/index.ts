@@ -8,7 +8,7 @@ let myModal = document.querySelector('#myModal') as HTMLElement
 // Create a new Bootstrap Modal instance
 const modal = new Modal(myModal)
 
-window.addEventListener('load', () => {
+window.addEventListener('load', (): void => {
     modal.show()
 })
 
@@ -24,8 +24,7 @@ form.addEventListener('submit', async (event): Promise<void> => {
     const formData = new FormData(form)
     const response = await post('api/createUser', formData)
     const alert = document.querySelector('#Alert') as HTMLElement
-
-    console.log(response, response.result, !!response.result)
+ 
     if (response.result === false) {
         alert.style.display = 'flex'
     } else {
